@@ -5,7 +5,7 @@ Terraform module to create custom iam role with option to pass in custom policy 
 
 ```hcl
 module "iam_assume_role" {
-  source                        = "../../"
+  source                        = "anonymint/iam-role/aws"
   role_name                     = "ec2-container-instance-profile"
   policy_arns_count             = "1"
   policy_arns                   = ["arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role"]
