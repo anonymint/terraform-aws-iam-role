@@ -3,7 +3,7 @@ variable "role_name" {
 }
 
 variable "iam_role_policy_document_json" {
-  type = "string"
+  type = string
 
   description = <<EOF
   Valid JSON Policy String
@@ -14,7 +14,7 @@ EOF
 }
 
 variable "policy_arns" {
-  type        = "list"
+  type        = list
   description = "List of policy arns to attach to this role"
   default     = []
 }
